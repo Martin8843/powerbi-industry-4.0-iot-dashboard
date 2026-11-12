@@ -434,7 +434,7 @@ Linia pakowania generuje zdecydowanie największe opóźnienia w dostawach przek
 
 <br>
 
-Główne źródło strat finansowych to linia Testing. Łączny koszt przestojów (Total Downtime Cost) wyniósł 10,65 mln $, z czego największy udział miała linia Testing generująca stratę 2 110 931 $ przy 90 godzinach przestoju oraz 9 incydentach krytycznych.<br> Na drugim miejscu pod względem kosztów przestojów uplasowała się linia Assembly (1 844 627 $, 77 h), a tuż za nią Packaging (1 738 811 $, 78 h i 7 incydentów krytycznych).
+Główne źródło strat finansowych to linia Testing. Łączny koszt przestojów (Total Downtime Cost) wyniósł 10,65 mln $, z czego największy udział miała linia Testing generująca stratę 2 110 931 $ przy 90 godzinach przestoju oraz 9 incydentach krytycznych.<br> Na drugim miejscu pod względem kosztów przestojów uplasowała się linia Assembly (1 844 627, 77 h), a tuż za Packaging (1 738 811, 78 h i 7 incydentów krytycznych).
 
 
 <table align="center" style="border: none;">
@@ -472,7 +472,7 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="zrzuty z kokpitu/PYT4_2_Odp.png" alt="Prezentacja customer" width="90%">
+      <img src="zrzuty kokpitu/PYT4_2_Odp.png" alt="Prezentacja customer" width="90%">
     </td
   </tr>
 </table>
