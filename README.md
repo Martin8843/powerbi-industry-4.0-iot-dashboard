@@ -40,7 +40,9 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 <br>
 <hr>
 <br>
+
 ---
+
 ### 📚 Spis treści
 <div id="1-wstęp"></div>
 <details>
