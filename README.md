@@ -1,15 +1,14 @@
-# powerbi-smart-factory-iot-dashboard
 
-# 📊 Dashboard Power BI – Analiza Sprzedaży E-Commerce (Case&nbsp;Study)
+# 🏭 Dashboard Power BI – Analityka Przemysłowa i OEE (Case Study) (Case&nbsp;Study)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
-Cześć!, <br><br> dziękuję że odwiedzasz moje repozytorium! Zapraszam cię do zapoznania się z moim projektem.  <br> Jest to to 3-stronicowy raport Power BI dla europejskiego sklepu rowerowego połączony z dokładną analizą problemu. <br> Na szczególną uwagę zasługuje autorski design stron raportu. Tła kanwy od podstaw zaprojektowałem w programie Figma, co pozwoliło uzyskać przejrzysty i spójny wizualnie interfejs.
+Cześć!, <br><br> dziękuję że odwiedzasz moje repozytorium! Zapraszam cię do zapoznania się z kolejnym projektem.  <br> Jest to 2-stronicowy raport Power BI dla inteligentnej fabryki IndustryOS, połączony z analizą wydajności linii produkcyjnych (OEE), przestojów oraz telemetrii czujników IoT (wibracji i temperatury). <br> Na szczególną uwagę zasługuje autorski design stron raportu. Tła kanwy od podstaw zaprojektowałem w programie Figma, co pozwoliło uzyskać przejrzysty i spójny wizualnie interfejs.
 
 ### Możesz pobrać gotowy plik i przetestować go samodzielnie:
 
 <p align="left">
-  <a href="raport_glowny/Sprzedaz_SklepRowerowy_Raport_v1.pbix">
+  <a href="Plik z raportem/Nowoczesna_Fabryka_Raport.pbix">
     <img src="https://img.shields.io/badge/📥_Pobierz_plik_projektu.pbix-Pobierz_Raport_Power_BI-2ea44f?style=for-the-badge&logo=powerbi&logoColor=white" alt="Pobierz PBIX">
   </a>
 </p>
