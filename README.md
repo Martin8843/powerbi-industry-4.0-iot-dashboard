@@ -26,9 +26,7 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 
 ### Wybierz stronę raportu do podglądu:
 
-<div align="center">
-
-<p align="left">
+<p align="center">
   <a href="#strona-1">
     <img src="https://img.shields.io/badge/📄_Industry_Overview-00f3ff?style=for-the-badge&logoColor=black" alt="Strona 1">
   </a>
@@ -36,7 +34,6 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
     <img src="https://img.shields.io/badge/📄_Devices_Overview-7b2cbf?style=for-the-badge&logoColor=white" alt="Strona 2">
   </a>
 </p>
-
 
 </div>
 
