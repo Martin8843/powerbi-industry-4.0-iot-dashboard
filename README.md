@@ -22,13 +22,14 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 
 <br>
 
-<div align="center">
+<div id="menu" align="center">
 
 ### Wybierz stronę raportu do podglądu:
 
 <p align="center">
   <a href="#strona-1">
-<img src="https://img.shields.io/badge/📄_Industry_Overview-7dd3fc?style=for-the-badge&logoColor=black" alt="Strona 1">  </a>
+    <img src="https://img.shields.io/badge/📄_Industry_Overview-7dd3fc?style=for-the-badge&logoColor=black" alt="Strona 1">
+  </a>
   <a href="#strona-2">
     <img src="https://img.shields.io/badge/📄_Devices_Overview-7b2cbf?style=for-the-badge&logoColor=white" alt="Strona 2">
   </a>
@@ -36,10 +37,9 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 
 </div>
 
-<div align="center">
-
-
-<div align="left">
+<br>
+<hr>
+<br>
 
 
 <br><br>
@@ -515,13 +515,17 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 
 <img src="overview_industry.gif" alt="Strona 1 - Sales Overview" width="100%">
 
-<a href="#">
+<br>
+
+<a href="#menu">
   <img src="https://img.shields.io/badge/⬆_Powrót_do_menu-F2C811?style=for-the-badge&logoColor=black" alt="Powrót">
 </a>
+
 </div>
 
 <br>
-
+<hr>
+<br>
 
 <!-- Sekcja Strony 2 -->
 <div id="strona-2" align="center">
@@ -530,13 +534,13 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 
 <img src="devices_industry.gif" alt="Strona 2 - Product Overview" width="100%">
 
-<a href="#">
-  <img src="https://img.shields.io/badge/⬆_Powrót_do_menu-F2C811?style=for-the-badge&logoColor=black" alt="Powrót">
-</a>
-</div>
-
 <br>
 
+<a href="#menu">
+  <img src="https://img.shields.io/badge/⬆_Powrót_do_menu-F2C811?style=for-the-badge&logoColor=black" alt="Powrót">
+</a>
+
+</div>
 
 <br>
 
