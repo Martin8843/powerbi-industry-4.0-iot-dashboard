@@ -28,15 +28,15 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 
 <div align="center">
 
-<a href="#strona-1">
-  <img src="https://img.shields.io/badge/📄_Przegląd_Sprzedaży-F2C811?style=for-the-badge&logoColor=black" alt="Strona 1">
-</a>
-<a href="#strona-2">
-  <img src="https://img.shields.io/badge/📄_Analiza_Produktów-2A75D3?style=for-the-badge&logoColor=white" alt="Strona 2">
-</a>
-<a href="#strona-3">
-  <img src="https://img.shields.io/badge/📄_Analiza_Klientów-107C41?style=for-the-badge&logoColor=white" alt="Strona 3">
-</a>
+<p align="left">
+  <a href="#strona-1">
+    <img src="https://img.shields.io/badge/📄_Industry_Overview-00f3ff?style=for-the-badge&logoColor=black" alt="Strona 1">
+  </a>
+  <a href="#strona-2">
+    <img src="https://img.shields.io/badge/📄_Devices_Overview-7b2cbf?style=for-the-badge&logoColor=white" alt="Strona 2">
+  </a>
+</p>
+
 
 </div>
 
@@ -55,11 +55,11 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 
 <br>
 
-Zarząd e-commerce rowerowego potrzebuje **spójnego wglądu w realną rentowność produktów i klientów**, ponieważ rozproszone dane utrudniały podejmowanie decyzji o marżach i budżetach marketingowych.
+Zarząd oraz inżynierowie utrzymania ruchu potrzebują spójnego, centralnego wglądu w realną efektywność parku maszynowego i telemetrię IoT. Rozproszone dane z sensorów oraz systemów produkcyjnych utrudniały bowiem szybkie wykrywanie awarii, optymalizację wskaźnika OEE i skuteczną kontrolę przestojów.
 
 Pytania główne:
 
-&emsp;**1. Które kategorie produktów stanowią „koło zamachowe” przychodów, a które generują najwyższą marżowość netto?**
+&emsp;**1. Jak kształtuje się dobowa krzywa wydajności (System Performance 24h) w wybranym zakładzie P007 w 3 kwartale 2024 i w których przedziałach godzinowych spada ona poniżej średniego poziomu dostępności (System Uptime)?**
 
 &emsp;**2. Kim jest najbardziej wartościowy klient (pod kątem wieku i geolokalizacji?)**
 
@@ -396,22 +396,21 @@ Projekt został zrealizowany pod kątem konkretnych pytań analitycznych postawi
 
 
 <details>
-<summary><b>&emsp; Pytanie Główne 1:  Które kategorie produktów stanowią „koło zamachowe” przychodów, a które generują najwyższą marżowość netto?</b></summary>
+<summary><b>&emsp; Pytanie Główne 1:  Jak kształtuje się dobowa krzywa wydajności (System Performance 24h) w wybranym zakładzie P007 w 3 kwartale 2024 i w których przedziałach godzinowych spada ona poniżej średniego poziomu dostępności (System Uptime)? </b></summary>
 
 <br>
 
-Głównym kołem zamachowym przychodów firmy są rowery (Bikes), które generują największą masę zysku i obrotu, podczas gdy akcesoria (Accessories) odpowiadają za masową sprzedaż wolumenową. <br>
-Największą marżowość netto generują wybrane **modele dętek** czy **koszyków na bidon** osiągające ponad 60-70% marży.
+Mimo wysokiej ogólnej dostępności parku maszynowego (~87%), analiza krzywej dobowej ujawnia konkretne godziny spadku tempa produkcji, które wymagają optymalizacji. <br>
+Wydajność pozostaje poniżej średniej dostępności w każdym punkcie pomiarowym – najwyższa jest na starcie doby o 00:00 (86,8%) oraz o 20:00 (85,9%). <br>
+Największe osłabienie tempa produkcji występuje na przełomie zmian o godzinie 08:00 (82,6%) oraz 16:00 (81,5%). <br>
+
+
 
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 10px;">
-      <img src="raport_glowny/chart_yoy_product_overview.png" alt="Prezentacja YoY Product Overview" width="90%">
+      <img src="zrzuty kokpitu/PYT1_Odp.png" alt="Prezentacja YoY Product Overview" width="90%">
     </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <img src="raport_glowny/high_margin.png" alt="Prezentacja High Margin" width="90%">
-    </td>
-  </tr>
 </table>
 
 </details>
