@@ -28,8 +28,7 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 
 <p align="center">
   <a href="#strona-1">
-    <img src="https://img.shields.io/badge/📄_Industry_Overview-00f3ff?style=for-the-badge&logoColor=black" alt="Strona 1">
-  </a>
+<img src="https://img.shields.io/badge/📄_Industry_Overview-7dd3fc?style=for-the-badge&logoColor=black" alt="Strona 1">  </a>
   <a href="#strona-2">
     <img src="https://img.shields.io/badge/📄_Devices_Overview-7b2cbf?style=for-the-badge&logoColor=white" alt="Strona 2">
   </a>
