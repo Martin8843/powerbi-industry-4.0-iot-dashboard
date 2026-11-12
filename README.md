@@ -1,5 +1,5 @@
 
-# 🏭 Dashboard Power BI – Analityka Przemysłowa i OEE (Case Study) (Case&nbsp;Study)
+# 🏭 Dashboard Power BI – Analityka Przemysłowa i OEE (Case&nbsp;Study)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
@@ -57,13 +57,13 @@ Pytania główne:
 
 &emsp;**1. Jak kształtuje się dobowa krzywa wydajności (System Performance 24h) w wybranym zakładzie P007 w 3 kwartale 2024 i w których przedziałach godzinowych spada ona poniżej średniego poziomu dostępności (System Uptime)?**
 
-&emsp;**2. Kim jest najbardziej wartościowy klient (pod kątem wieku i geolokalizacji?)**
+&emsp;**2. Które linie produkcyjne generują największe ryzyko jakościowe i opóźnienia w dostawach w zakładzie F010 dla kategorii produktów Food?**
 
-&emsp;**3. W którym roku firma zanotowała rekordowy przychód miesięczny i ile on wyniósł?**
+&emsp;**3. Które obszary produkcji w zakładzie F001 (2023 r.) generowały najwyższe koszty przestojów (Downtime Cost)**
 
 Pytanie szczegółowe: 
 
-&emsp;**1. Jaki jest średni profil zakupowy klienta (średnia wartość zamówienia i liczba produktów w koszyku) w zależności od kategorii głównej produktu?**
+&emsp;**1. Jak prezentuje się stan sensorów IoT (Overall Sensor Health) w ujęciu ostatniego tygdodnia i w których fabrykach wskaźnik ten utrzymuje się powyżej bezpiecznego progu 70 punktów bez rejestracji alarmów krytycznych?**
 <br>
 <br>
 <br>
@@ -412,21 +412,16 @@ Największe osłabienie tempa produkcji występuje na przełomie zmian o godzini
 </details>
 
 <details>
-<summary><b>&emsp; Pytanie Główne 2: Kim jest najbardziej wartościowy klient (pod kątem wieku i geolokalizacji?)</b></summary>
+<summary><b>&emsp; Pytanie Główne 2: Które linie produkcyjne generują największe ryzyko jakościowe i opóźnienia w dostawach w zakładzie F010 dla kategorii produktów Food?</b></summary>
 
 <br>
-
-Głównym motorem generującym największy zysk netto firmy są klienci z grupy wiekowej **Adults (35-64)**, którzy odpowiadają za dominujący udział w całkowitym przychodzie z wynikiem  4,4 mln$.
-Analiza geograficzna wskazuje kluczowe rynki zbytu, takie jak **Stany Zjednoczone**.
+Linia pakowania generuje zdecydowanie największe opóźnienia w dostawach przekraczające 1000 godzin (co widać po najwyższym położeniu na osi Y wykresu Quality & Delivery Risk) oraz największy bąbel oznaczający skalę problemu. <br> Wiąże się to z największymi przestojami (37 h) i niższą wydajnością OEE na poziomie 83,1%.
 
 
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="raport_glowny/top_revenue_segment.png" alt="Prezentacja YoY Product Overview" width="90%">
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <img src="raport_glowny/usa_adults.png" alt="Prezentacja High Margin" width="90%">
+      <img src="zrzuty z kokpitu/PYT2_Odp.png" alt="Prezentacja YoY Product Overview" width="90%">
     </td>
   </tr>
 </table>
@@ -435,17 +430,17 @@ Analiza geograficzna wskazuje kluczowe rynki zbytu, takie jak **Stany Zjednoczon
 
 
 <details>
-<summary><b>&emsp; Pytanie Główne 3: W którym roku firma zanotowała rekordowy przychód miesięczny i ile on wyniósł?</b></summary>
+<summary><b>&emsp; Pytanie Główne 3: Które obszary produkcji w zakładzie F001 (2023 r.) generowały najwyższe koszty przestojów (Downtime Cost)?</b></summary>
 
 <br>
 
-Wybierając na wykresie ikone dwie strzałki rozwija się poziom hierarchii dat o 1 niżej. Można wówczas sprawdzić dane dla miesięcy. Odpowiedzią na pytanie biznesu jest **Grudzień 2015 – 2,7 mln**
+Główne źródło strat finansowych to linia Testing. Łączny koszt przestojów (Total Downtime Cost) wyniósł 10,65 mln $, z czego największy udział miała linia Testing generująca stratę 2 110 931 $ przy 90 godzinach przestoju oraz 9 incydentach krytycznych.<br> Na drugim miejscu pod względem kosztów przestojów uplasowała się linia Assembly (1 844 627 $, 77 h), a tuż za nią Packaging (1 738 811 $, 78 h i 7 incydentów krytycznych).
 
 
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="raport_glowny/pik_dec_2015.png" alt="Prezentacja sales performance" width="90%">
+      <img src="zrzuty z kokpitu/PYT3_Odp.png" alt="Prezentacja sales performance" width="90%">
     </td
   </tr>
 </table>
@@ -453,27 +448,31 @@ Wybierając na wykresie ikone dwie strzałki rozwija się poziom hierarchii dat 
 
 
 <details>
-<summary><b>&emsp; Pytanie Szczegółowe: Jaki jest średni profil zakupowy klienta (średnia wartość zamówienia i liczba produktów w koszyku) w zależności od kategorii głównej produktu?</b></summary>
+<summary><b>&emsp; Pytanie Szczegółowe: Jak prezentuje się stan sensorów IoT (Overall Sensor Health) w ujęciu ostatniego tygdodnia i w których fabrykach wskaźnik ten utrzymuje się powyżej bezpiecznego progu 70 punktów bez rejestracji alarmów krytycznych?</b></summary>
 
 <br>
 
-**Dla kategorii Bikes** <br>
-Wartość zamówienia: Wysoka (np. powyżej 1000$). <br>
-Liczba produktów w koszyku: Średnio 1 sztuka na zamówienie (klient kupuje jeden konkretny rower).
-
-**Dla kategorii Accessories** <br>
-Wartość zamówienia: ok. 200$. <br>
-Liczba produktów w koszyku: Wysoka  10-15 produktów (klienci wrzucają do koszyka kilka sztuk drobnych elementów naraz, np. dętki, bidony).
-
-**Dla kategorii Clothing** <br>
-Wartość zamówienia: 400-500$. <br>
-Liczba produktów w koszyku: zestawy odzieżowe.
+W fabrykach F010 oraz F019 stan sensorów stabilnie utrzymuje się powyżej ustalonego progu 70 punktów, co potwierdza brak alarmów krytycznych i status komunikatów jako All systems normal.
 
 
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="raport_glowny/basket_volume_customer.png" alt="Prezentacja customer" width="90%">
+      <img src="zrzuty z kokpitu/PYT4_Odp.png" alt="Prezentacja customer" width="90%">
+    </td
+  </tr>
+</table>
+
+<br>
+
+W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów ostrzegawczych na podanych liniach w sekcji Recent Sensor IoT Alerts.
+
+<br>
+
+<table align="center" style="border: none;">
+  <tr>
+    <td align="center" style="border: none; padding: 30px;">
+      <img src="zrzuty z kokpitu/PYT4_2_Odp.png" alt="Prezentacja customer" width="90%">
     </td
   </tr>
 </table>
