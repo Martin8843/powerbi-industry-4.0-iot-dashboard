@@ -9,7 +9,7 @@ Cześć!, <br><br> dziękuję że odwiedzasz moje repozytorium! Zapraszam cię d
 
 <p align="left">
   <a href="Plik z raportem/IndustryOS_Raport.pbix">
-    <img src="https://img.shields.io/badge/📥_Pobierz_plik_projektu.pbix-Pobierz_Raport_Power_BI-0055ff?style=for-the-badge&logo=powerbi&logoColor=white" alt="Pobierz PBIX">
+    <img src="https://img.shields.io/badge/📥_Pobierz_plik_projektu.pbix-Pobierz_Raport_Power_BI-7b2cbf?style=for-the-badge&logo=powerbi&logoColor=white" alt="Pobierz PBIX">
   </a>
 </p>
 ---
