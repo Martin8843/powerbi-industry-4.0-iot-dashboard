@@ -421,7 +421,7 @@ Linia pakowania generuje zdecydowanie największe opóźnienia w dostawach przek
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="zrzuty z kokpitu/PYT2_Odp.png" alt="Prezentacja YoY Product Overview" width="90%">
+      <img src="zrzuty kokpitu/PYT2_Odp.png" alt="Prezentacja YoY Product Overview" width="90%">
     </td>
   </tr>
 </table>
@@ -440,7 +440,7 @@ Główne źródło strat finansowych to linia Testing. Łączny koszt przestojó
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="zrzuty z kokpitu/PYT3_Odp.png" alt="Prezentacja sales performance" width="90%">
+      <img src="zrzuty kokpitu/PYT3_Odp.png" alt="Prezentacja sales performance" width="90%">
     </td
   </tr>
 </table>
@@ -458,7 +458,7 @@ W fabrykach F010 oraz F019 stan sensorów stabilnie utrzymuje się powyżej usta
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="zrzuty z kokpitu/PYT4_Odp.png" alt="Prezentacja customer" width="90%">
+      <img src="zrzuty kokpitu/PYT4_Odp.png" alt="Prezentacja customer" width="90%">
     </td
   </tr>
 </table>
