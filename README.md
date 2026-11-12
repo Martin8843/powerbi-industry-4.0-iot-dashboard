@@ -8,10 +8,8 @@ Cześć!, <br><br> dziękuję że odwiedzasz moje repozytorium! Zapraszam cię d
 ### Możesz pobrać gotowy plik i przetestować go samodzielnie:
 
 <p align="left">
-  <a href="Plik z raportem/IndustryOS_Raport.pbix" style="text-decoration: none;">
-    <span style="display: inline-block; padding: 10px 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; background: linear-gradient(135deg, #0055ff 0%, #00f3ff 100%); border-radius: 6px; box-shadow: 0 4px 15px rgba(0, 85, 255, 0.3);">
-      📥 Pobierz plik projektu.pbix (IndustryOS)
-    </span>
+  <a href="Plik z raportem/IndustryOS_Raport.pbix">
+    <img src="https://img.shields.io/badge/📥_POBIERZ_PLIK_PROJEKTU.PBIX-IndustryOS-00f3ff?style=for-the-badge&logo=powerbi&logoColor=black" alt="Pobierz PBIX">
   </a>
 </p>
 ---
