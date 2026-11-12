@@ -512,7 +512,7 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 
 ### Strona 1: Ogólny Przegląd Fabryki
 
-<img src="overview_industry.gif" alt="Strona 1 - Sales Overview" width="100%">
+<img src="gify/overview_industry.gif" alt="Strona 1 - Sales Overview" width="100%">
 
 <br>
 
@@ -531,7 +531,7 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 
 ### Strona 2: Analiza Parku Maszynowego
 
-<img src="devices_industry.gif" alt="Strona 2 - Product Overview" width="100%">
+<img src="gify/devices_industry.gif" alt="Strona 2 - Product Overview" width="100%">
 
 <br>
 
