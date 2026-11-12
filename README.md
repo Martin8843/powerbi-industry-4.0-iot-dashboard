@@ -47,7 +47,7 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 ### 📚 Spis treści
 <div id="1-wstęp"></div>
 <details>
-<summary><b>1. Problem biznesowy i postawione pytania </b> <i>(kliknij, aby rozwinąć)</i></summary>
+<summary><b>1. Problem biznesowy i postawione pytania (odpowiedzi w pkt 8.)</b> <i>(kliknij, aby rozwinąć)</i></summary>
 
 <br>
 
@@ -511,9 +511,9 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 <!-- Sekcja Strony 1 -->
 <div id="strona-1" align="center">
 
-### Strona 1: Ogólny Przegląd Sprzedaży
+### Strona 1: Ogólny Przegląd Fabryki
 
-<img src="sales-overview.gif" alt="Strona 1 - Sales Overview" width="100%">
+<img src="overview_industry.gif" alt="Strona 1 - Sales Overview" width="100%">
 
 <a href="#">
   <img src="https://img.shields.io/badge/⬆_Powrót_do_menu-F2C811?style=for-the-badge&logoColor=black" alt="Powrót">
@@ -526,9 +526,9 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 <!-- Sekcja Strony 2 -->
 <div id="strona-2" align="center">
 
-### Strona 2:  Analiza Produktów
+### Strona 2: Analiza Parku Maszynowego
 
-<img src="product_overview.gif" alt="Strona 2 - Product Overview" width="100%">
+<img src="devices_industry.gif" alt="Strona 2 - Product Overview" width="100%">
 
 <a href="#">
   <img src="https://img.shields.io/badge/⬆_Powrót_do_menu-F2C811?style=for-the-badge&logoColor=black" alt="Powrót">
@@ -537,17 +537,6 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 
 <br>
 
-<!-- Sekcja Strony 3 -->
-<div id="strona-3" align="center">
-
-### Strona 3:  Analiza Klientów
-
-<img src="customer_overview.gif" alt="Strona 3 - Customer Overview" width="100%">
-
-<a href="#">
-  <img src="https://img.shields.io/badge/⬆_Powrót_do_menu-F2C811?style=for-the-badge&logoColor=black" alt="Powrót">
-</a>
-</div>
 
 <br>
 
