@@ -372,7 +372,7 @@ Raport został zaprojektowany z naciskiem na nowoczesny interfejs oraz optymaliz
 
 <div id="8-wnioski-biznesowe"></div>
 <details>
-<summary<b> 8. Case Study – Odpowiedzi</b> <i>(kliknij, aby rozwinąć)</i></b></summary>
+<summary><b>8. Case Study – Odpowiedzi</b> <i>(kliknij, aby rozwinąć)</i></summary>
 
 <br>
 
@@ -395,6 +395,7 @@ Największe osłabienie tempa produkcji występuje na przełomie zmian o godzini
     <td align="center" style="border: none; padding: 10px;">
       <img src="zrzuty kokpitu/PYT1_Odp.png" alt="Prezentacja YoY Product Overview" width="90%">
     </td>
+  </tr>
 </table>
 
 </details>
@@ -429,14 +430,14 @@ Główne źródło strat finansowych to linia Testing. Łączny koszt przestojó
   <tr>
     <td align="center" style="border: none; padding: 30px;">
       <img src="zrzuty kokpitu/PYT3_Odp.png" alt="Prezentacja" width="90%">
-    </td
+    </td>
   </tr>
 </table>
 </details>
 
 
 <details>
-<summary><b>&emsp; Pytanie Szczegółowe: Jak prezentuje się stan sensorów IoT (Overall Sensor Health) w ujęciu ostatniego tygdodnia i w których fabrykach wskaźnik ten utrzymuje się powyżej bezpiecznego progu 70 punktów bez rejestracji alarmów krytycznych?</b></summary>
+<summary><b>&emsp; Pytanie Szczegółowe: Jak prezentuje się stan sensorów IoT (Overall Sensor Health) w ujęciu ostatniego tygodnia i w których fabrykach wskaźnik ten utrzymuje się powyżej bezpiecznego progu 70 punktów bez rejestracji alarmów krytycznych?</b></summary>
 
 <br>
 
@@ -447,7 +448,7 @@ W fabrykach F010 oraz F019 stan sensorów stabilnie utrzymuje się powyżej usta
   <tr>
     <td align="center" style="border: none; padding: 30px;">
       <img src="zrzuty kokpitu/PYT4_Odp.png" alt="Prezentacja" width="90%">
-    </td
+    </td>
   </tr>
 </table>
 
@@ -461,14 +462,12 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
   <tr>
     <td align="center" style="border: none; padding: 30px;">
       <img src="zrzuty kokpitu/PYT4_2_Odp.png" alt="Prezentacja" width="90%">
-    </td
+    </td>
   </tr>
 </table>
 </details>
 
 </details>
-
-
 
 
 
