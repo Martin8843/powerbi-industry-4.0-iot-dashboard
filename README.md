@@ -1,9 +1,9 @@
 
-# 🏭 Dashboard Power BI – Analityka Przemysłowa i OEE (Case&nbsp;Study)
+# 🏭 Dashboard Power BI –Nowoczesna Analityka Przemysłowa 4.0 (Case&nbsp;Study)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
-Cześć!, <br><br> dziękuję że odwiedzasz moje repozytorium! Zapraszam cię do zapoznania się z kolejnym projektem.  <br> Jest to 2-stronicowy raport Power BI dla inteligentnej fabryki IndustryOS, połączony z analizą wydajności linii produkcyjnych (OEE), przestojów oraz telemetrii czujników IoT (wibracji i temperatury). <br> <br> Na szczególną uwagę zasługuje autorski design stron raportu. Tła kanwy od podstaw zaprojektowałem w programie Figma, co pozwoliło uzyskać przejrzysty i spójny wizualnie interfejs.
+Cześć!, <br><br> dziękuję że odwiedzasz moje repozytorium! Zapraszam cię do zapoznania się z kolejnym projektem.  <br> Jest to 2-stronicowy raport Power BI dla fabryki w rewoluji 4.0, połączony z analizą wydajności linii produkcyjnych (OEE), przestojów oraz telemetrii czujników IoT (wibracji i temperatury). <br> <br> Na szczególną uwagę zasługuje autorski design stron raportu. Tła kanwy od podstaw zaprojektowałem w programie Figma, co pozwoliło uzyskać przejrzysty i spójny wizualnie interfejs.
 
 ### Możesz pobrać gotowy plik i przetestować go samodzielnie:
 
