@@ -8,7 +8,7 @@ Cześć!, <br><br> dziękuję że odwiedzasz moje repozytorium! Zapraszam cię d
 ### Możesz pobrać gotowy plik i przetestować go samodzielnie:
 
 <p align="left">
-  <a href="Plik z raportem/IndustryOS_Raport.pbix">
+  <a href="Plik z raportem/Nowoczesna_Fabryka_Raport.pbix">
     <img src="https://img.shields.io/badge/📥_Pobierz_plik_projektu.pbix-Pobierz_Raport_Power_BI-0055ff?style=for-the-badge&logo=powerbi&logoColor=white" alt="Pobierz PBIX">
   </a>
 </p>
