@@ -277,64 +277,63 @@ Warstwa wizualna została zaprojektowana w oparciu o zasady Data Storytellingu. 
 
 <!-- PUNKT 2 -->
 <details>
-<summary><b>Wykresy słupkowe (Widok Sprzedaż)</b></summary>
+<summary><b>Wykres warstwowy (Widok Fabryka)</b></summary>
 
 <p align="center">
-    <img src="/raport_glowny/revenue_vs_profit_sales_overview.png" alt="Sales Overview" width="700">
+    <img src="/zrzuty kokpitu/Wykres_warstwowy_Fabryka.png" alt="Sales Overview" width="700">
 </p>
 
-- **Porównanie roczne:** Przychody (Revenue) vs Zysk (Profit) w latach 2014–2016
-- Dwa wykresy słupkowe obok siebie pokazują twarde zestawienie finansowe przedsiębiorstwa w ujęciu rocznym.
+- **Wydajność systemowa w czasie:** Prezentuje dobową dynamikę oraz wahania ogólnej wydajności systemów  w ujęciu 24-godzinnym.
+- Idealnie pokazuje ciągły proces i wahania w cyklu dobowym, czego słupki by nie oddały. Doskonale pasuje do ciemnego motywu (Dark Mode) i nowoczesnych paneli sterowania.
     
-<span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Weryfikacja czy przychody i zysk idą w parze z realnym zyskiem przedsiębiorstwa (rentownością sprzedaży) oraz pozwalają ocenić stabilność finansową firmy na przestrzeni lat.
+<span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Wizualna ocena amplitudy wahań oraz szybka identyfikacja szczytów wydajnościowych i spadków operacyjnych.
 </details>
 
 <br>
 
 <!-- PUNKT 3 -->
 <details>
-<summary><b>Wykres kolumnowy grupowany (Widok Produkty)</b></summary>
+<summary><b>Wykres pierścieniowy (Widok Fabryka)</b></summary>
 
 <p align="center">
-    <img src="/raport_glowny/chart_yoy_product_overview.png" alt="Product Overview" width="700">
+    <img src="/zrzuty kokpitu/wykres_pierscieniowy_Fabryka.png" alt="Overview" width="700">
 </p>
 
-- Wykres przedstawia rentowność poszczególnych kategorii produktów w czasie.
-- Jedna wizualizacja pokazuje dwa wymiary, bez zbędnego szumu prowadzi odbiorcę do konkretnych wniosków biznesowych.
-  
-<span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Identyfikacja najbardziej dochodowych produktów oraz śledzenie dynamiki ich rentowności na przestrzeni lat.
+- Wykres prezentuje udział oraz strukturę incydentów krytycznych w podziale na poszczególne obszary i etapy procesu produkcyjnego, z łączną sumą zdarzeń wyeksponowaną w centrum wykresu.
+-   
+<span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Szybka identyfikacja najbardziej awaryjnych obszarów fabryki i priorytetyzacja działań
 </details>
 
 <br>
 
 <!-- PUNKT 4 -->
 <details>
-<summary><b>Wykres słupkowy 100% skumulowany (Widok Klient)</b></summary>
+<summary><b>Wykres liniowy skumulowany kolumnowy (Widok Fabryka)</b></summary>
 
 <p align="center">
-    <img src="/raport_glowny/basket_structure_customer_overview.png" alt="Customer Overview" width="700">
+    <img src="/zrzuty kokpitu/wykres_lin_skum_kol_Fabryka.png" alt="Overview" width="700">
 </p>
   
-- Procentowy udział poszczególnych kategorii produktów w całkowitych wydatkach poszczególnych grup demograficznych.
-- Paski procentowe i podział na kolory pozwalają w ułamku sekundy zrozumieć nawyki zakupowe bez zagłębiania się w tabele.
-
-<span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Zrozumienie nawyków zakupowych różnych pokoleń w celu optymalizacji ofert.
+- Wykres przedstawia strukturę kosztów operacyjnych (operating_cost) oraz kosztów pracy (labor_cost) w podziale na linie/obszary produkcyjne, z dodatkową osią dla wskaźnika ryzyka operacyjnego (operational_risk).
+- Wybór wizuala jest przemyślany ponieważ pozwala zestawić na jednym wykresie dwie zupełnie różne miary – strukturę finansową (koszty operacyjne i pracy) oraz wskaźnik ciągły (ryzyko operacyjne), oszczędzając miejsce na dashboardzie.
+  
+<span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Korelacja kosztów operacyjnych i pracowniczych z ryzykiem awarii w celu optymalizacji budżetu. Nałożona linia ryzyka pozwala w ułamku sekundy zauważyć, czy drogie w utrzymaniu linie produkcyjne są jednocześnie tymi o najwyższym ryzyku awarii.
 </details>
 
 <br>
 
 <!-- PUNKT 5 -->
 <details>
-<summary><b>Wykres kolumnowy grupowany (Widok Klient)</b></summary>
+<summary><b>Wykres punktowy (Widok Urządzenia)</b></summary>
 
 <p align="center">
-    <img src="/raport_glowny/total_profit_customer_overview.png" alt="Customer Overview" width="700">
+    <img src="/zrzuty kokpitu/wykres punktowy Urzadzenia.png" alt="Customer Overview" width="700">
 </p>
   
-- Wykres przedstawia całkowity zysk netto wygenerowany przez poszczególne grupy wiekowe klientów.
-- Wyraźne słupki uszeregowane malejąco pozwalają w ułamku sekundy zauważyć, kto napędza rentowność firmy.
+- Wykres przedstawia  relację liczby wad (Defects) i opóźnień dostaw w podziale na obszary produkcyjne, z rozmiarem bąbelka jako dodatkową miarą wagową.   
+- Wykres szybko uwypukla krytyczne obszary leżące w prawym górnym rogu (wysokie opóźnienia i dużo wad).
   
-<span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Skierowanie działań tam, gdzie zwrot z inwestycji jest najwyższy.
+<span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Identyfikacja obszarów generujących największe ryzyko jakościowe i logistyczne, co pozwala na priorytetowe eliminowanie wąskich gardeł dostaw.
 </details>
 <br>
 <br>
