@@ -106,8 +106,8 @@ Pytanie szczegółowe:
 
 Model danych został zorganizowany wokół centralnej tabeli faktów:
 
-* **Tabela Faktów (`Fact_IndustryRisk`): Główna tabela transakcyjna zawierająca kluczowe metryki operacyjne, telemetrię IoT oraz wskaźniki ryzyka finansowego i produkcyjnego (m.in. koszty, przepływy, opóźnienia i wskaźniki awaryjności).
-* **Tabele Wymiarów (`Dim_Production_Lines`, `Dim_Risk_Level`, `Dim_Date`):
+* **Tabela Faktów** (`Fact_IndustryRisk`): Główna tabela transakcyjna zawierająca kluczowe metryki operacyjne, telemetrię IoT oraz wskaźniki ryzyka finansowego i produkcyjnego (m.in. koszty, przepływy, opóźnienia i wskaźniki awaryjności).
+* **Tabele Wymiarów** (`Dim_Production_Lines`, `Dim_Risk_Level`, `Dim_Date`):
 
 `Dim_Production_Lines` – słownik linii produkcyjnych powiązany relacją jednokierunkową 1: (Jeden do Wiele)* z tabelą faktów.
 
