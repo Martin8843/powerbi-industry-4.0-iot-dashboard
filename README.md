@@ -79,17 +79,18 @@ Pytanie szczegółowe:
 <br>
 
 #### a. Źródło danych
-* **Pochodzenie i format danych:** Publiczny zbiór danych z platformy **Kaggle**, plik `*.csv`
+* **Publiczny zbiór danych z platformy Kaggle (Industry 4.0 Financial Risk Dataset), plik w formacie *.csv zaciągany i modelowany za pomocą SQL Server
 
 #### b. Zakres 
-* **Czas:** Dokładna data (dzień, miesiąc, rok)
-* **Demografia:** Wiek (liczbowo oraz grupy wiekowe: *Youth*, *Adults*) i płeć klientów.
-* **Geografia:** Kraj (*Country*) i region/stan (*State*).
-* **Produkty:** Kategoria (*Product_Category*: rowery/akcesoria), Podkategoria (*Sub_Category*) oraz nazwa modelu (*Product*).
+* **Czas:** Wymiar uwzględniający lata, kwartały, miesiące oraz cykle dobowe (24h) i zmiany robocze.
+* **Lokalizacja i produkcja:** Fabryki / Zakłady (Plant Location, np. F010, F001) oraz kategorie produktów (Product Category, np. Food) i linie produkcyjne.
+* **IoT i Stan techniczny:** Telemetria sensorów, wskaźniki zdrowia urządzeń, poziomy wibracji.
+
   
-#### c. Miary finansowe
-* **Wolumen i przychody:** *Order_Quantity* (sztuki), *Unit_Price*, *Revenue* (przychód).
-* **Koszty i rentowność:** *Unit_Cost*, *Cost*, *Profit* (zysk)
+#### c. Miary operacyjne i finansowe m.in.
+* **Wydajność i dyspozycyjność:** System_Uptime, Efficiency_Score, Production_volume, Order_Fulfillment_Rate.
+* **Przestoje i ryzyko:** Downtime_Hours, Sensor_Health, RUL
+* **Koszty i finanse:** Total_Revenue, Total_Operation_Cost, Total_Maintenance_Cost.
 <br>
 <br>
 <br>
@@ -105,9 +106,16 @@ Pytanie szczegółowe:
 
 Model danych został zorganizowany wokół centralnej tabeli faktów:
 
-- **Tabela Faktów (`Fact_Sales`):** Główna tabela transakcyjna zawierająca kluczowe metryki finansowe (koszty, przychody, wolumen) oraz atrybuty klienta i produktu.
-- **Tabela Wymiaru (`Dim_Date`):** Dedykowana tabela kalendarza połączona relacją jednokierunkową **1:* (Jeden do Wiele)** z tabelą faktów, umożliwiająca zaawansowaną analizę czasową (Time Intelligence).
-- **Tabela Miar (`tb_measures`):** Osobna tabela techniczna służąca jako spójny kontener na wszystkie utworzone miary DAX, co ułatwia zarządzanie kodem.
+- **Tabela Faktów (`Fact_IndustryRisk`): Główna tabela transakcyjna zawierająca kluczowe metryki operacyjne, telemetrię IoT oraz wskaźniki ryzyka finansowego i produkcyjnego (m.in. koszty, przepływy, opóźnienia i wskaźniki awaryjności).
+- **Tabele Wymiarów (`Dim_Production_Lines`, `Dim_Risk_Level`, `Dim_Date`):
+
+`Dim_Production_Lines` – słownik linii produkcyjnych powiązany relacją jednokierunkową 1: (Jeden do Wiele)* z tabelą faktów.
+
+`Dim_Risk_Level` – słownik poziomów ryzyka finansowego.
+
+`Dim_Date` – dedykowana tabela kalendarza połączona relacją 1: (Jeden do Wiele)*, umożliwiająca zaawansowaną analizę czasową.<br>
+
+- **Tabela Miar (`MIARY`):** Osobna tabela techniczna służąca jako spójny kontener na wszystkie utworzone miary DAX.
 
 <!-- Podgląd schematu relacji w Power BI -->
 <p align="center">
