@@ -147,7 +147,7 @@ Zanim powstał raport w Power BI, cały interfejs został zaprojektowany od pods
   <tr>
     <td width="50%" align="center">
       <b>Strona Startowa</b><br>
-      <img src="./projekt makiety/Landing page.png" alt="Strona startowa" width="100%">
+      <img src="./projekt makiety/Landing Page.png" alt="Strona startowa" width="100%">
     </td>
     <td width="50%" align="center">
       <b>Przegląd Fabryki</b><br>
@@ -170,81 +170,72 @@ Zanim powstał raport w Power BI, cały interfejs został zaprojektowany od pods
 
 <div id="5-Logika i dax"></div>
 <details>
-<summary><b> 5. Logika biznesowa sklepu i kluczowe miary DAX </b> <i></i></summary>
+<summary><b> 5. Logika biznesowa i kluczowe miary DAX </b> <i></i></summary>
 <br>
 
-Aby przeanalizować sprzedaż w branży rowerowej, stworzyłem dedykowany zestaw miar DAX (wykorzystujących funkcje takie jak `CALCULATE`, `ALL`, `DIVIDE` czy zmienne `VAR`).
+Aby przeanalizować kluczowe wskaźniki efektywności i ryzyka w przemyśle 4.0, stworzyłem dedykowany zestaw 14 miar DAX. Oto kilka z nich:
 
-#### 1. Całkowity przychód [$] (Total Revenue)
+#### 1. Średni wskaźnik OEE (Avg_OEEue). Średnia ważona.
 
 ```dax
-Total Revenue = SUM('Fact_Sales'[Revenue])
+Avg_OEE = 
+DIVIDE(
+    SUMX(
+        Fact_IndustryRisk,
+        Fact_IndustryRisk[overall_equipment_effectiveness] * Fact_IndustryRisk[production_volume]
+    ),
+    SUM(Fact_IndustryRisk[production_volume]) * 100,
 ```
-**Cel analityczny:** Podstawowy wskaźnik pokazujący całkowitą wartość sprzedaży wygenerowaną w danym okresie. <br>
-Stanowi fundament pod dalsze wyliczenia finansowe (marża, zysk netto, AOV).
+
+**Cel analityczny:** Monitorowanie ogólnej efektywności wyposażenia (Overall Equipment Effectiveness), stanowiące podstawowy miernik wydajności produkcyjnej fabryi.
+Używam średniej ważonej aby lepiej oddać obraz fabryki, ponieważ poszczególne wiersze różnią się wolumenem lub czasem pracy.
 
 ---
 
-#### 2. Średnia wartość zamówienia [$] (Global Avg Order Value)
+#### 2. Całkowity czas przestojów w godzinach (Total_Downtime_Hours)
 
 ```dax
-Global Avg Order Value = CALCULATE([Avg Order Value], ALL('Fact_Sales'[Age_Group]))
+
+Total_Downtime_Hours = 
+SUM(Fact_IndustryRisk[machine_downtime_min]) / 60
+
 ```
-**Cel analityczny:** Obliczenie średniej wartości zamówienia dla całego sklepu  (całkowicie ignorując filtr grupy wiekowej). <br>
-Umożliwienie bezpośredniego porównania średniej wartości koszyka konkretnej grupy wiekowej ze średnią dla całego sklepu
+
+**Cel analityczny:** Agregacja całkowitego czasu przestojów maszyn, co pozwala identyfikować główne wąskie gardła i opóźnienia w dostawach.
 
 ---
 
-#### 3. Średnia marża produktu [$] (Avg Product Margin)
+#### 3. Dynamiczny komunikat alertów sensorów IoT (Sensor_Alert_Message)
 
 ```dax
-Avg Product Margin = DIVIDE([Total Profit], [Total Revenue], 0)
-
+Sensor_Alert_Message = 
+IF(
+    ISFILTERED(Fact_IndustryRisk[factory_id]),
+    COALESCE(
+        CONCATENATEX(
+            VALUES(Fact_IndustryRisk[production_line]), 
+            "Line: " & Fact_IndustryRisk[production_line], 
+            UNICHAR(10)
+        ),
+        "✅ All systems normal"
+    ),
+    BLANK()
+)
 ```
-**Cel analityczny:** Kluczowy wskaźnik rentowności pozwalający ocenić, jaka część przychodu ze sprzedaży produktów zostaje w firmie jako zysk.
+
+**Cel analityczny:** Dynamiczne zarządzanie treścią komunikatu na kafelku wizualnym w zależności od kontekstu filtrowania.
 
 ---
 
-#### 4. Wskaźnik sprzedaży [%] (Sales Growth Rate)
+#### 4. Całkowite zużycie energii w kWh (Energy_Usage)
 
 ```dax
-Sales Growth Rate = 
-VAR PoprzedniRok = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Dim_Date'[Date]))
-RETURN
-  DIVIDE([Total Revenue] - PoprzedniRok, PoprzedniRok, 0)
+Energy_Usage = SUM(Fact_IndustryRisk[energy_consumption_kwh])
+
 ```
-**Cel analityczny:** Pozwala rzetelnie ocenić dynamikę wzrostu biznesu z uwzględnieniem sezonowości.
+**Cel analityczny:** Podstawowa agregacja wolumenu zużycia energii elektrycznej w kWh dla wybranych linii produkcyjnych, fabryk lub okresów czasowych. Umożliwia monitorowanie energochłonności procesów przemysłowych.
 
 ---
-
-#### 5. Udział wolumenowy TOP produktów [%] (Top Products Volume Share)
-
-```dax
-Top Products Volume Share = 
-VAR NumOfTopProducts = 10  -- Liczba produktów w tabeli w widoku raportu
--- 1. Sprzedane sztuki dla Top 10 produktów
-VAR TopProductsUnits = 
-    CALCULATE(
-        SUM('Fact_Sales'[Order_Quantity]), 
-        TOPN(
-            NumOfTopProducts,
-            ALL('Fact_Sales'[Product]),
-            [Total Profit], --  ranking po ZYSKU
-            DESC
-        )
-    )
-
--- 2. Całkowita liczba sprzedanych sztuk w całej firmie
-VAR TotalCompanyUnits = 
-    CALCULATE(
-        SUM('Fact_Sales'[Order_Quantity]),
-        ALL('Fact_Sales')
-    )
-
-RETURN
-    DIVIDE(TopProductsUnits, TotalCompanyUnits, 0)
-```
-**Cel analityczny:** Pozwala zweryfikować czy kluczowy zysk idzie w parze z wolumenem oraz ocenić, jak duże jest uzależnienie sprzedaży od topowego asortymentu w sklepie rowerowym.
 <br>
 <br>
 <br>
@@ -263,28 +254,23 @@ Warstwa wizualna została zaprojektowana w oparciu o zasady Data Storytellingu. 
 
 <!-- PUNKT 1 -->
 <details>
-<summary><b>Karty KPI (Widok Sprzedaż)</b></summary>
+<summary><b>Karty KPI (Widok Fabryka)</b></summary>
 
 <p align="center">
-    <img src="/raport_glowny/kpi_sales_overview.png" alt="Sales Overview" width="700">
+    <img src="/zrzuty kokpitu/KPI_Fabryka.png" alt=Overview" width="700">
 </p>
 
-- **Całkowita sprzedaż i wskaźniki jednostkowe** (`Zielona karta`)
-  * **Total Sales:** Główna wartość pokazująca całkowity przychód wygenerowany przez sklep w wybranym okresie.
-  * **Average Profit (Gauge):** Średni zysk przypadający na jedno zamówienie.
-  * **Average Order Value (Gauge):** Średnia wartość koszyka zakupowego.
+- **Kluczowe wskaźniki operacyjne i finansowe**
+  * **Total Revenue:** Główna wartość pokazująca całkowity przychód wygenerowany przez fabrykę w wybranym okresie.
 
-  <span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Szybka ocena skali biznesu oraz rentowności pojedynczej transakcji.
+  * **Total Operation Cost:** Sumaryczne koszty operacyjne i utrzymania ruchu w zakładach.
 
-- **Segmenty Przychodowe (`Beżowa karta`)**
-  * **Wykres słupkowy:** Prezentuje rozkład przychodów sklepu rowerowego w podziale na grupy demograficzne klientów.
-
-  <span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Szybka identyfikacja kluczowej grupy docelowej, która przynosi największe przychody dla biznesu.
-
-- **Dynamika sprzedaży (`Fioletowa karta`)**
-  * Sales Growth Rate: Wyrazista, pojedyncza karta KPI przedstawiająca dynamikę wzrostu przychodów w ujęciu rocznym (YoY).
+  * **System Uptime:** Wskaźnik dostępności i ciągłości pracy systemów produkcyjnych.
+  
+  * **Efficiency Score:** Ogólny wskaźnik efektywności i wydajności procesów produkcyjnych
+ 
+  * **Cel analityczny:** Szybka ocena skali biznesu, bieżącej rentowności oraz gotowości operacyjnej zakładu już od pierwszych sekund patrzenia na dashboard
     
-  <span style="color: #4dabf7; font-weight: bold;">Cel analityczny:</span> Błyskawiczna informacja o tempie rozwoju oraz wysokiej skalowalności biznesu rowerowego. 
 </details>
 
 <br>
