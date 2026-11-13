@@ -150,13 +150,13 @@ Zanim powstał raport w Power BI, cały interfejs został zaprojektowany od pods
       <img src="./projekt makiety/Landing page.png" alt="Strona startowa" width="100%">
     </td>
     <td width="50%" align="center">
-      <b>Przegląd Sprzedaży</b><br>
+      <b>Przegląd Fabryki</b><br>
       <img src="./projekt makiety/Overview.png" alt="Przegląd Fabryka" width="100%">
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <b>Analiza Produktów</b><br>
+      <b>Analiza Urządzeń</b><br>
       <img src="./projekt makiety/Devices.png" alt="Przegląd Urządzenia" width="100%">
     </td>
   
