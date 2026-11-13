@@ -106,8 +106,8 @@ Pytanie szczegółowe:
 
 Model danych został zorganizowany wokół centralnej tabeli faktów:
 
-- **Tabela Faktów (`Fact_IndustryRisk`): Główna tabela transakcyjna zawierająca kluczowe metryki operacyjne, telemetrię IoT oraz wskaźniki ryzyka finansowego i produkcyjnego (m.in. koszty, przepływy, opóźnienia i wskaźniki awaryjności).
-- **Tabele Wymiarów (`Dim_Production_Lines`, `Dim_Risk_Level`, `Dim_Date`):
+* **Tabela Faktów (`Fact_IndustryRisk`): Główna tabela transakcyjna zawierająca kluczowe metryki operacyjne, telemetrię IoT oraz wskaźniki ryzyka finansowego i produkcyjnego (m.in. koszty, przepływy, opóźnienia i wskaźniki awaryjności).
+* **Tabele Wymiarów (`Dim_Production_Lines`, `Dim_Risk_Level`, `Dim_Date`):
 
 `Dim_Production_Lines` – słownik linii produkcyjnych powiązany relacją jednokierunkową 1: (Jeden do Wiele)* z tabelą faktów.
 
@@ -115,7 +115,7 @@ Model danych został zorganizowany wokół centralnej tabeli faktów:
 
 `Dim_Date` – dedykowana tabela kalendarza połączona relacją 1: (Jeden do Wiele)*, umożliwiająca zaawansowaną analizę czasową.<br>
 
-- **Tabela Miar (`MIARY`):** Osobna tabela techniczna służąca jako spójny kontener na wszystkie utworzone miary DAX.
+* **Tabela Miar (`MIARY`):** Osobna tabela techniczna służąca jako spójny kontener na wszystkie utworzone miary DAX.
 
 <!-- Podgląd schematu relacji w Power BI -->
 <p align="center">
@@ -134,12 +134,11 @@ Model danych został zorganizowany wokół centralnej tabeli faktów:
 
 Zanim powstał raport w Power BI, cały interfejs został zaprojektowany od podstaw w programie **Figma**. <br>Takie podejście pozwoliło na spójne zaplanowanie architektury informacji, hierarchii wizualnej oraz customowych elementów graficznych.
 
-- Projekt został zrobiony na przemyślanej palecie kolorów nawiązującej do branży rowerowej (dynamiczne żółcie, głębokie błękity i zieleń analityczna).
-- Stworzyłem makiety dla 3 głównych zakładek analitycznych oraz strony startowej:
-  * *Przegląd Sprzedaży* – KPI, trendy czasowe i mapy geograficzne.
-  * *Analiza Produktów* – marżowość, podkategorie i bestsellery.
-  * *Analiza Klientów* – segmentacja wiekowa, demografia i zachowania zakupowe.
-  * *Strona Start*
+- Projekt został zrobiony na przemyślanej palecie kolorów nawiązującej do przemysłu i IoT (głębokie, ciemne błękity tła, nowoczesny cyjan).
+- Stworzyłem makiety dla 2 głównych zakładek analitycznych oraz strony startowej (Landing Page):
+  * *Industry Overview* – kafle KPI (przychody, koszty operacyjne, Uptime, wskaźnik efektywności), incydenty krytyczne oraz koszty przestojów.
+  * *Devices Overview* – telemetria sensorów, wibracje, temperatura, analiza OEE vs przestępy
+
 - Tła oraz statyczne elementy interfejsu wygenerowałem jako czyste grafiki w Figmie i importowałem bezpośrednio do Power BI jako tło kanwy.
 
 #### 🎨 Makiety layoutów:
@@ -148,22 +147,19 @@ Zanim powstał raport w Power BI, cały interfejs został zaprojektowany od pods
   <tr>
     <td width="50%" align="center">
       <b>Strona Startowa</b><br>
-      <img src="./layout_design/Landing page.png" alt="Strona startowa" width="100%">
+      <img src="./projekt makiety/Landing page.png" alt="Strona startowa" width="100%">
     </td>
     <td width="50%" align="center">
       <b>Przegląd Sprzedaży</b><br>
-      <img src="./layout_design/Sales_Overview.png" alt="Przegląd Sprzedaży" width="100%">
+      <img src="./projekt makiety/Overview.pn" alt="Przegląd Fabryka" width="100%">
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <b>Analiza Produktów</b><br>
-      <img src="./layout_design/Product Overview.png" alt="Analiza Produktów" width="100%">
+      <img src="./projekt makiety/Devices.pn" alt="Przegląd Urządzenia" width="100%">
     </td>
-    <td width="50%" align="center">
-      <b>Analiza Klientów</b><br>
-      <img src="./layout_design/Customer Overview.png" alt="Analiza Klientów" width="100%">
-    </td>
+  
   </tr>
 </table>
 <br>
