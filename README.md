@@ -50,7 +50,7 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 
 <br>
 
-Zarząd oraz inżynierowie utrzymania ruchu potrzebują spójnego, centralnego wglądu w realną efektywność parku maszynowego i telemetrię IoT. Rozproszone dane z sensorów oraz systemów produkcyjnych utrudniały bowiem szybkie wykrywanie awarii, optymalizację wskaźnika OEE i skuteczną kontrolę przestojów.
+Zarząd oraz inżynierowie utrzymania ruchu potrzebują spójnego, centralnego wglądu w realną efektywność parku maszynowego i telemetrię IoT.
 
 Pytania główne:
 
