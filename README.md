@@ -280,7 +280,7 @@ Warstwa wizualna została zaprojektowana w oparciu o zasady Data Storytellingu. 
 <summary><b>Wykres warstwowy (Widok Fabryka)</b></summary>
 
 <p align="center">
-    <img src="/zrzuty kokpitu/Wykres_warstwowy_Fabryka.png" alt="Sales Overview" width="700">
+    <img src="/zrzuty kokpitu/Wykres_warstwowy_Fabryka.png" alt="Overview" width="700">
 </p>
 
 - **Wydajność systemowa w czasie:** Prezentuje dobową dynamikę oraz wahania ogólnej wydajności systemów  w ujęciu 24-godzinnym.
