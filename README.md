@@ -79,7 +79,7 @@ Pytanie szczegółowe:
 <br>
 
 #### a. Źródło danych
-* **Publiczny zbiór danych z platformy Kaggle (Industry 4.0 Financial Risk Dataset), plik w formacie *.csv zaciągany i modelowany za pomocą SQL Server
+* **Publiczny zbiór danych z platformy Kaggle (Industry 4.0 Financial Risk Dataset)**, plik w formacie *.csv zaciągany i modelowany za pomocą SQL Server
 
 #### b. Zakres 
 * **Czas:** Wymiar uwzględniający lata, kwartały, miesiące oraz cykle dobowe (24h) i zmiany robocze.
