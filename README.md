@@ -54,7 +54,7 @@ Zarząd oraz inżynierowie utrzymania ruchu potrzebują spójnego, centralnego w
 
 Pytania główne:
 
-&emsp;**1. Jak kształtuje się dobowa krzywa wydajności (System Performance 24h) w wybranym zakładzie P007 w 3 kwartale 2024 i w których przedziałach godzinowych spada ona poniżej średniego poziomu dostępności (System Uptime)?**
+&emsp;**1. Jak kształtuje się dobowa krzywa wydajności w wybranym zakładzie P007 w 3 kwartale 2024 i w których przedziałach godzinowych spada ona poniżej średniego poziomu dostępności?**
 
 &emsp;**2. Które linie produkcyjne generują największe ryzyko jakościowe i opóźnienia w dostawach w zakładzie F010 dla kategorii produktów Food?**
 
@@ -62,7 +62,7 @@ Pytania główne:
 
 Pytanie szczegółowe: 
 
-&emsp;**1. Jak prezentuje się stan sensorów IoT (Overall Sensor Health) w ujęciu ostatniego tygdodnia i w których fabrykach wskaźnik ten utrzymuje się powyżej bezpiecznego progu 70 punktów bez rejestracji alarmów krytycznych?**
+&emsp;**1. Jak prezentuje się stan sensorów IoT w ujęciu ostatniego tygdodnia i w których fabrykach wskaźnik ten utrzymuje się powyżej bezpiecznego progu 70 punktów bez rejestracji alarmów krytycznych?**
 <br>
 <br>
 <br>
@@ -403,7 +403,7 @@ Największe osłabienie tempa produkcji występuje na przełomie zmian o godzini
 <summary><b>&emsp; Pytanie Główne 2: Które linie produkcyjne generują największe ryzyko jakościowe i opóźnienia w dostawach w zakładzie F010 dla kategorii produktów Food?</b></summary>
 
 <br>
-Linia pakowania generuje zdecydowanie największe opóźnienia w dostawach przekraczające 1000 godzin (co widać po najwyższym położeniu na osi Y wykresu Quality & Delivery Risk) oraz największy bąbel oznaczający skalę problemu. <br> Wiąże się to z największymi przestojami (37 h) i niższą wydajnością OEE na poziomie 83,1%.
+Linia pakowania generuje zdecydowanie największe opóźnienia w dostawach przekraczające 1000 godzin (co widać po najwyższym położeniu na osi Y wykresu Quality & Delivery Risk oraz największy bąbel oznaczający skalę problemu. <br> Wiąże się to z największymi przestojami (37 h) i niższą wydajnością OEE na poziomie 83,1%.
 
 
 <table align="center" style="border: none;">
