@@ -370,6 +370,7 @@ Raport został zaprojektowany z naciskiem na nowoczesny interfejs oraz optymaliz
 <br>
 </details>
 
+<details>
 <div id="8-wnioski-biznesowe"></div>
 <summary<b> 8. Case Study – Odpowiedzi</b> <i>(kliknij, aby rozwinąć)</i></b></summary>
 
