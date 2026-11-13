@@ -353,7 +353,7 @@ Raport został zaprojektowany z naciskiem na nowoczesny interfejs oraz optymaliz
   Zamiast zagracać przestrzeń statycznymi filtrami, utworzyłem dynamiczny panel wysuwany za pomocą ikony suwaków. Wykorzystując *Zakładki (Bookmarks)* oraz panel *Wybór (Selection)*, użytkownik może w każdej chwili włączyć lub ukryć filtry (`filters on / off`)
 
 <p align="center">
-  <img src="hidden_filters.gif" alt="Prezentacja " width="90%">
+  <img src="/gify/ukrywanie filtra.gif" alt="Prezentacja " width="90%">
 </p>
 
 <br>
@@ -362,7 +362,7 @@ Raport został zaprojektowany z naciskiem na nowoczesny interfejs oraz optymaliz
   Po lewej stronie zaimplementowałem spójny, estetyczny panel boczny z przyciskami, który umożliwia szybkie i płynne przełączanie się pomiędzy głównymi widokami raportu, zapewniając doświadczenia zbliżone do nowoczesnych aplikacji.
 
 <p align="center">
-  <img src="nawigation_pages.gif" alt="Prezentacja " width="90%">
+  <img src="/gify/nawigacja.gif" alt="Prezentacja " width="90%">
 </p>
 <br>
 <br>
@@ -372,7 +372,7 @@ Raport został zaprojektowany z naciskiem na nowoczesny interfejs oraz optymaliz
 
 <div id="8-wnioski-biznesowe"></div>
 <details>
-<summary><b> 8. Wnioski Biznesowe / Odpowiedzi dla Biznesu </b></summary>
+<summary><b> 8. Wnioski Biznesowe / Odpowiedzi</b></summary>
 
 <br>
 
@@ -409,7 +409,7 @@ Linia pakowania generuje zdecydowanie największe opóźnienia w dostawach przek
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="zrzuty kokpitu/PYT2_Odp.png" alt="Prezentacja YoY Product Overview" width="90%">
+      <img src="zrzuty kokpitu/PYT2_Odp.png" alt="Overview" width="90%">
     </td>
   </tr>
 </table>
@@ -428,7 +428,7 @@ Główne źródło strat finansowych to linia Testing. Łączny koszt przestojó
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="zrzuty kokpitu/PYT3_Odp.png" alt="Prezentacja sales performance" width="90%">
+      <img src="zrzuty kokpitu/PYT3_Odp.png" alt="Prezentacja" width="90%">
     </td
   </tr>
 </table>
@@ -446,7 +446,7 @@ W fabrykach F010 oraz F019 stan sensorów stabilnie utrzymuje się powyżej usta
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="zrzuty kokpitu/PYT4_Odp.png" alt="Prezentacja customer" width="90%">
+      <img src="zrzuty kokpitu/PYT4_Odp.png" alt="Prezentacja" width="90%">
     </td
   </tr>
 </table>
@@ -460,7 +460,7 @@ W pozostałych zakładach park maszynowy wykazuje punktowe przekroczenia progów
 <table align="center" style="border: none;">
   <tr>
     <td align="center" style="border: none; padding: 30px;">
-      <img src="zrzuty kokpitu/PYT4_2_Odp.png" alt="Prezentacja customer" width="90%">
+      <img src="zrzuty kokpitu/PYT4_2_Odp.png" alt="Prezentacja" width="90%">
     </td
   </tr>
 </table>
