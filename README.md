@@ -46,7 +46,7 @@ Plik .pbix zawiera kompletnie załadowany i gotowy model danych. <br>Do repozyto
 ### 📚 Spis treści
 <div id="1-wstęp"></div>
 <details>
-<summary><b>1. Problem biznesowy i postawione pytania (odpowiedzi w pkt 8.)</b> <i>(kliknij, aby rozwinąć)</i></summary>
+<summary><b>1. Case Study – Pytania biznesowe (odpowiedzi w pkt 8.)</b> <i>(kliknij, aby rozwinąć)</i></summary>
 
 <br>
 
@@ -372,7 +372,7 @@ Raport został zaprojektowany z naciskiem na nowoczesny interfejs oraz optymaliz
 
 <div id="8-wnioski-biznesowe"></div>
 <details>
-<summary><b> 8. Wnioski Biznesowe / Odpowiedzi</b></summary>
+<summary<b> 8. Case Study – Odpowiedzi</b> <i>(kliknij, aby rozwinąć)</i></b></summary>
 
 <br>
 
