@@ -280,7 +280,7 @@ Warstwa wizualna została zaprojektowana w oparciu o zasady Data Storytellingu. 
 <summary><b>Wykres warstwowy (Widok Fabryka)</b></summary>
 
 <p align="center">
-    <img src="/zrzuty kokpitu/Wykres_warstwowy_Fabryka.png" alt="Overview" width="700">
+    <img src="/zrzuty kokpitu/Wykres_warstwowy_Fabryka.png" alt="Overview" width="500">
 </p>
 
 - **Wydajność systemowa w czasie:** Prezentuje dobową dynamikę oraz wahania ogólnej wydajności systemów  w ujęciu 24-godzinnym.
@@ -296,7 +296,7 @@ Warstwa wizualna została zaprojektowana w oparciu o zasady Data Storytellingu. 
 <summary><b>Wykres pierścieniowy (Widok Fabryka)</b></summary>
 
 <p align="center">
-    <img src="/zrzuty kokpitu/wykres_pierscieniowy_Fabryka.png" alt="Overview" width="700">
+    <img src="/zrzuty kokpitu/wykres_pierscieniowy_Fabryka.png" alt="Overview" width="500">
 </p>
 
 - Wykres prezentuje udział oraz strukturę incydentów krytycznych w podziale na poszczególne obszary i etapy procesu produkcyjnego, z łączną sumą zdarzeń wyeksponowaną w centrum wykresu.
@@ -311,7 +311,7 @@ Warstwa wizualna została zaprojektowana w oparciu o zasady Data Storytellingu. 
 <summary><b>Wykres liniowy skumulowany kolumnowy (Widok Fabryka)</b></summary>
 
 <p align="center">
-    <img src="/zrzuty kokpitu/wykres_lin_skum_kol_Fabryka.png" alt="Overview" width="700">
+    <img src="/zrzuty kokpitu/wykres_lin_skum_kol_Fabryka.png" alt="Overview" width="500">
 </p>
   
 - Wykres przedstawia strukturę kosztów operacyjnych (operating_cost) oraz kosztów pracy (labor_cost) w podziale na linie/obszary produkcyjne, z dodatkową osią dla wskaźnika ryzyka operacyjnego (operational_risk).
@@ -327,7 +327,7 @@ Warstwa wizualna została zaprojektowana w oparciu o zasady Data Storytellingu. 
 <summary><b>Wykres punktowy (Widok Urządzenia)</b></summary>
 
 <p align="center">
-    <img src="/zrzuty kokpitu/wykres punktowy Urzadzenia.png" alt="Customer Overview" width="700">
+    <img src="/zrzuty kokpitu/wykres punktowy Urzadzenia.png" alt="Customer Overview" width="500">
 </p>
   
 - Wykres przedstawia  relację liczby wad (Defects) i opóźnień dostaw w podziale na obszary produkcyjne, z rozmiarem bąbelka jako dodatkową miarą wagową.   
